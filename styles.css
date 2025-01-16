@@ -13,18 +13,22 @@
 
 header {
     width: 100%;
+    color: white;
+    background: #2d25a0;
 }
 
-nav, ul {
+nav, ul , .heroCtn , .btnCtn, .containedBtn{
     display: flex;
     align-items: center;
 }
-
+nav , .heroCtn {   
+     max-width: 1150px;
+     margin: 0  auto;
+}
 nav {
     width: 80%;
     position: fixed;
     justify-content: space-between;
-    max-width: 1150px;
     margin: 0 auto;
     top: 5%;
     left: 50%;
@@ -32,11 +36,42 @@ nav {
 }
 nav> ul > li {
     list-style: none;
+    
+}
+nav > ul > li , .containedBtn {
+    font-size: 1rem;
+    font-weight: 500;
 }
 nav > ul {
     gap: 10px;
 }
 nav > ul > li> a {
     text-decoration: none;
-    color:  black;
+    color: white;
+}
+
+.heroCtn {
+    padding: 12% 0 5% 0;
+}
+.heroCtn{
+    justify-content: space-between;
+}
+
+.btnCtn{
+    gap: 5px;
+}
+.containedBtn {
+    outline: none;
+    border: none;
+    background-color: #e02c6d;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+.heroTitle {
+    font-size: 4rem;
+    font-weight: 800;
+}
+.btnCtn{
+    margin-top: 0.8rem;
 }
