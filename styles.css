@@ -17,11 +17,20 @@ header {
     background: #2d25a0;
 }
 
-nav, ul , .heroCtn , .btnCtn, .containedBtn{
+nav, ul , .heroCtn , .btnCtn, .containedBtn , .copaContent, .ctn , .players , .playerCtn , .copaAmerica{
     display: flex;
     align-items: center;
 }
-nav , .heroCtn {   
+
+.ctn , .playerCtn , .copaContent{
+    flex-direction: column;
+}
+.copaContent{
+    align-items: start;
+    gap: 15px;
+}
+
+nav , .heroCtn, .ctn {   
      max-width: 1150px;
      margin: 0  auto;
 }
@@ -67,6 +76,7 @@ nav > ul > li> a {
     color: white;
     padding: 10px 20px;
     border-radius: 8px;
+    gap: 10px;
 }
 .heroTitle {
     font-size: 4rem;
@@ -74,4 +84,37 @@ nav > ul > li> a {
 }
 .btnCtn{
     margin-top: 0.8rem;
+}
+
+
+.ctn {
+    gap: 50px;
+    margin-top: 50px;
+}
+.players , .playerCtn{
+    gap: 20px;
+}
+.playerImg > img {
+    /* border-radius: 8px; */
+}
+
+.name {
+    font-size: 28px;
+    font-weight: 800;
+}
+.paragraph {
+    color: rgb(108, 108, 108);
+}
+
+.copaAmerica {
+    gap: 70px;
+}
+
+.copaContent > div > p {
+    width: 70%;
+    margin-top: 10px ;
+}
+.title {
+    font-size: 48px;
+    font-weight: 800;
 }
