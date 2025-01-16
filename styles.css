@@ -46,13 +46,13 @@ nav , .heroCtn, .ctn {
      margin: 0  auto;
 }
 nav {
-    width: 80%;
+    width: 95%;
     position: fixed;
     justify-content: space-between;
-    margin: 0 auto;
-    top: 5%;
+    /* margin: 0 auto; */
+    /* top: 5%; */
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-50%); 
     padding: 10px 20px;
     backdrop-filter: blur(20px);
     border-radius: 10px;
@@ -95,6 +95,12 @@ nav > .btnCtn {
     padding: 10px 20px;
     border-radius: 8px;
     gap: 10px;
+    cursor: pointer;
+}
+
+.containedBtn:hover {
+    background-color: #e02c6ee7;
+    transition: all 0.3 ease;
 }
 .heroTitle {
     font-size: 4rem;
@@ -153,4 +159,71 @@ footer{
 .iconContainer > i{
     font-size: 1.4rem;
     color: #807b7b;
+}
+.hidden {
+    display: none;
+}
+.visible {
+    display: block;
+}
+.menu {
+    display: none;
+}
+
+@media screen and (max-width: 576px) {
+    .pages {
+        display: none;
+    }
+    .menu {
+        display: block;
+    }
+    .heroCtn, .players, .copaAmerica {
+        flex-direction: column;
+        align-items: start;
+    }
+    .heroCtn {
+        padding-top: 30%;
+        gap: 40px;
+    }
+     .heroCtn {
+        padding: 20px;
+    }
+    .heroCtn {
+        padding-top: 20%;
+    }
+    .heroTitle {
+        font-size: 2.4rem;
+    }
+    .heroImgCtn > img{
+        width: 100%;
+        object-fit: cover;
+        height: auto;
+    }
+    nav {
+        top: 2%;
+    }
+    .playerImg> img, .imgContainer > img, .copaContent> div > p {
+        width: 100%;
+    }
+    .title {
+        font-size: 1.8rem;
+    }
+    .iconContainer > i {
+        font-size: 0.8rem;
+    }
+    .footerContent {
+        gap: 10px;
+    }
+    .copaAmerica {
+        gap: 20px;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    .pages {
+        display: none;
+    }
+    .menu {
+        display: block;
+    }
 }
